@@ -3,7 +3,7 @@
 
 dotdir=~/dotfiles
 dotbak=~/dotfiles_old
-files=".bashrc .tmux.conf .Xresources"
+files=".bashrc .tmux.conf .Xresources .zshrc .bash_aliases .config"
 
 echo "Creating $dotbak for backup of any existing dotfiles in ~"
 mkdir -p $dotbak

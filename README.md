@@ -1,16 +1,17 @@
-# INFO
-these be my dotfiles (program settings, for all non tech people)
+# ~/.dotfiles
+![screenshot](screenshot.png)
 
-- ive got one for ```tmux```
-- ive got one for ```bashrc```
-- need to add one for ```kodi ```
-- need to add one for ```vim```
-- should problaly add a ```skel``` folder too
+## Tools in use:
+- [i3](https://github.com/i3/i3) (window manager) + [polybar](https://github.com/polybar/polybar) (status bar)
+- [zsh](https://www.zsh.org) + [ohmyzsh](https://github.com/robbyrussell/oh-my-zsh)
 
 
 
-## Setup
+
+## Installation:
 ```
-git clone http://borkslash.com:8087/BorkStick/dotfiles.git ~/dotfiles
-~/dotfiles/bootstrap.sh
+git clone https://lab.borkslash.com/BorkStick/dotfiles-2019.git ~/.dotfiles
+cd ~/.dotfiles
+./bootstrap.sh
+
 ```

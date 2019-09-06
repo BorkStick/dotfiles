@@ -2,7 +2,7 @@
 ![screenshot](screenshot.png)
 
 ## Tools in use:
-- [i3-gaps](https://github.com/Airblader/i3) (window manager) + [polybar](https://github.com/polybar/polybar) (status bar)
+- [i3](https://github.com/i3/i3) (window manager) + [polybar](https://github.com/polybar/polybar) (status bar)
 - [zsh](https://www.zsh.org)
 
 

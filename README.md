@@ -10,7 +10,7 @@
 
 ## Installation:
 ```
-git clone https://lab.borkslash.com/BorkStick/dotfiles-2019.git ~/.dotfiles
+git clone https://github.com/BorkStick/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./bootstrap.sh
 

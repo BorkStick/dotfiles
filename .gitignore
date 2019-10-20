@@ -1,3 +1,15 @@
 .config/Code
 .config/pulse
 .config/ibus
+.config/dconf/
+.config/copyq/
+.config/autostart/
+.config/evolution/
+.config/GitKraken/
+.config/gtk-3.0/
+.config/kdeconnect/
+
+
+.config/gnome-initial-setup-done
+.config/user-dirs.dirs
+.config/user-dirs.locale

@@ -111,6 +111,18 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+# telling workspaces what display to use
+#dispslay1
+workspace 1 output Virtual1
+workspace 2 output Virtual1
+workspace 3 output Virtual1
+workspace 4 output Virtual1
+#display 2
+workspace 5 output Virtual2
+workspace 6 output Virtual2
+workspace 7 output Virtual2
+workspace 8 output Virtual2
+
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -196,3 +208,7 @@ exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper/wallhaven-13gom9.jpg
 #assign [class="rtabmapviz"] $workspace3
 #assign [class="QGroundControl"] $workspace3
 #assign [class="obs"] $workspace9
+
+for_window [title="CopyQ"] floating enable
+
+

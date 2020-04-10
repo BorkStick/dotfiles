@@ -1,10 +1,12 @@
+alias ba='vim ~/.bash_aliases'
+
 alias c='clear'
 alias back='cd $OLDPWD'
-alias a='. ~/.bashrc'
+alias a='. ~/.zshrc'
 alias v='vagrant'
 alias q='exit'
 alias k='cd ..'
-alias s='sudo'
+#alias s='sudo'
 alias e='vim -O '
 alias E='vim -o '
 alias ports='netstat -tulanp'
@@ -22,13 +24,20 @@ alias mem5='ps auxf | sort -nr -k 4 | head -5'
 
 #Folders
 alias scr='cd ~/Documents/scripts'
-alias not='cd ~/Documents/borknotes'
 alias dot='cd ~/dotfiles'
 alias dow='cd ~/Downloads'
+
+
+
+alias not='cd ~/Documents/borknotes && code .'
+alias n='cd ~/Documents/borknotes && code .'
+
 
 alias png='ping google.com'
 
 alias hosts='sudo vim /etc/hosts'
+alias chostname='sudo vim /etc/hostname'
+
 alias borkssh='ssh aciidic@10.0.0.22' 
 
 alias c.='code .'
@@ -73,10 +82,59 @@ alias ytmp3='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --d
 [ -d ~/Dropbox ]              && alias dr='cd ~/Dropbox'
 [ -d ~/Downloads ]            && alias dl='cd ~/Downloads'
 [ -d ~/Desktop ]              && alias dt='cd ~/Desktop'
-[ -d ~/PROJECTS ] && alias pj='cd ~/PROJECTS'
+[ -d ~/PROJECTS ]             && alias pj='cd ~/PROJECTS'
+[ -d ~/SCRIPTS ]             && alias scr='cd ~/SCRIPTS'
 
 alias exip='curl icanhazip.com'
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -'
 # My IP
 alias myip='ip addr | sed -En "s/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p"'
+
+ipcheck () {
+  curl https://ipinfo.io/$1
+}
+
+ipinfo(){ 
+  curl ipinfo.io/$1
+}
+
+sshspeedtest () {
+  yes | pv |ssh "$1" "cat >/dev/null"
+}
+
+gogo() {
+  scp -q ~/.bashrc $1:/tmp/.bashrc_temp;
+  scp -q ~/.bash_aliases $1:/tmp/.bash_aliases_temp;
+  scp -q ~/functions.sh $1:/tmp/functions.sh;
+  scp -q ~/functions.txt $1:/tmp/functions.txt;
+  ssh -t $1 "bash --rcfile /tmp/.bashrc_temp ; rm /tmp/.bashrc_temp /tmp/.bash_aliases_temp /tmp/functions.*"
+}
+
+fun () {
+  FILE=~/functions.sh
+  TMPFILE=/tmp/functions.sh
+if [ ! -f "$FILE" ]; then
+  sh /tmp/functions.sh
+fi
+
+}
+
+#WEBSERVER STUFF
+
+alias i='ls /var/www'
+
+alias errlog='function _errlog(){ sudo tail -f /var/log/nginx/$1.error.log;};_errlog'
+alias acclog='function _acclog(){ sudo tail -f /var/log/nginx/$1.access.log;};_acclog'
+
+alias reload='sudo systemctl reload nginx'
+alias perms='sudo chown -R www-data:www-data /var/www/'
+alias enablesite='sudo ln -s /etc/nginx/sites-available/$1 /etc/nginx/sites-enabled/'
+alias esite='function _esite(){ sudo ln -s /etc/nginx/sites-available/$1 /etc/nginx/sites-enabled/; echo "$1 Enabled";};_esite'
+
+# Folders Shortcuts
+[ -d /etc/nginx/sites-available ]              && alias ngsa='cd /etc/nginx/sites-available'
+[ -d /etc/nginx/sites-enabled ]              && alias ngse='cd /etc/nginx/sites-enabled'
+
+[ -d /var/www ]              && alias www='cd /var/www'
+[ -d /var/log ]              && alias logs='cd /var/log'
 

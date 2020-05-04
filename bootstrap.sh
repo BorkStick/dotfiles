@@ -1,7 +1,7 @@
 #!/bin/bash
 # This script creates symlinks from ~/ to dotfiles dotdir
 
-dotdir=~/.dotfiles
+dotdir=$(pwd)
 dotbak=~/.dotfiles_old
 files=".bashrc .tmux.conf .Xresources .zshrc .bash_aliases .config"
 
@@ -17,5 +17,5 @@ for file in $files; do
     echo "Moving existing dotfiles from ~ to $dotbak"
     mv ~/$file ~/.dotfiles_old/
     echo "Creating symlink to $file in home dotdirectory."
-    ln -s $dotdir/$file ~/$file
+    ln -s -f $dotdir/$file ~/$file
 done

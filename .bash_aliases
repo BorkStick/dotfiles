@@ -1,6 +1,7 @@
 alias ba='vim ~/.bash_aliases'
 
 alias c='clear'
+alias x="exit"
 alias back='cd $OLDPWD'
 alias a='. ~/.zshrc'
 alias v='vagrant'
@@ -24,7 +25,7 @@ alias mem5='ps auxf | sort -nr -k 4 | head -5'
 
 #Folders
 alias scr='cd ~/Documents/scripts'
-alias dot='cd ~/dotfiles'
+alias dot='cd ~/Documents/dotfiles'
 alias dow='cd ~/Downloads'
 
 
@@ -73,6 +74,12 @@ alias gp='git push'
 alias gboop='git add . && git commit && git push'
 alias boop='git add . && git commit -m'
 
+
+#search 
+alias '?'=duck
+alias '??'=google
+
+
 #youtubedl video
 alias ytdl='youtube-dl -f bestvideo+bestaudio --download-archive downloaded.txt --ignore-errors '
 #youtubedl mp3
@@ -101,6 +108,9 @@ ipinfo(){
 sshspeedtest () {
   yes | pv |ssh "$1" "cat >/dev/null"
 }
+
+
+
 
 gogo() {
   scp -q ~/.bashrc $1:/tmp/.bashrc_temp;

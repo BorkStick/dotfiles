@@ -91,6 +91,8 @@ alias ytmp3='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --d
 [ -d ~/Desktop ]              && alias dt='cd ~/Desktop'
 [ -d ~/PROJECTS ]             && alias pj='cd ~/PROJECTS'
 [ -d ~/SCRIPTS ]             && alias scr='cd ~/SCRIPTS'
+[ -d ~/REPOS/lab.borkslash.com ]             && alias lab='cd ~/REPOS/lab.borkslash.com'
+[ -d ~/REPOS/github.com ]             && alias github='cd ~/REPOS/github.com'
 
 alias exip='curl icanhazip.com'
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -'

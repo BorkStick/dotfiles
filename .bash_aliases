@@ -85,6 +85,11 @@ alias ytdl='youtube-dl -f bestvideo+bestaudio --download-archive downloaded.txt 
 #youtubedl mp3
 alias ytmp3='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --download-archive downloaded.txt --ignore-errors '
 
+dlvid() {
+cd ~/Videos
+youtube-dl -f best --download-archive downloads.txt --ignore-errors $1
+}
+
 # Folders Shortcuts
 [ -d ~/Dropbox ]              && alias dr='cd ~/Dropbox'
 [ -d ~/Downloads ]            && alias dl='cd ~/Downloads'

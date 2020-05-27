@@ -3,7 +3,7 @@
 
 dotdir=$(pwd)
 dotbak=~/.dotfiles_old
-files=".bashrc .tmux.conf .Xresources .zshrc .bash_aliases .config"
+files=".bashrc .vimrc .tmux.conf .Xresources .zshrc .bash_aliases .config"
 binfile="duck google"
 
 echo "Creating $dotbak for backup of any existing dotfiles in ~"

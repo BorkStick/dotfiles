@@ -1,0 +1,46 @@
+{
+   "app": {
+      "display_mode": "browser",
+      "icon_color": "#FFC824",
+      "launch": {
+         "web_url": "http://10.0.0.55:8080/sabnzbd/"
+      },
+      "linked_icons": [ {
+         "size": 76,
+         "url": "http://10.0.0.55:8080/sabnzbd/staticcfg/ico/apple-touch-icon-76x76-precomposed.png"
+      }, {
+         "size": 120,
+         "url": "http://10.0.0.55:8080/sabnzbd/staticcfg/ico/apple-touch-icon-120x120-precomposed.png"
+      }, {
+         "size": 152,
+         "url": "http://10.0.0.55:8080/sabnzbd/staticcfg/ico/apple-touch-icon-152x152-precomposed.png"
+      }, {
+         "size": 180,
+         "url": "http://10.0.0.55:8080/sabnzbd/staticcfg/ico/apple-touch-icon-180x180-precomposed.png"
+      }, {
+         "size": 192,
+         "url": "http://10.0.0.55:8080/sabnzbd/staticcfg/ico/android-192x192.png"
+      }, {
+         "size": 0,
+         "url": "http://10.0.0.55:8080/sabnzbd/staticcfg/ico/favicon.ico?v=1.1.0"
+      } ]
+   },
+   "description": "",
+   "icons": {
+      "120": "icons/120.png",
+      "128": "icons/128.png",
+      "152": "icons/152.png",
+      "16": "icons/16.png",
+      "180": "icons/180.png",
+      "192": "icons/192.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "76": "icons/76.png",
+      "96": "icons/96.png"
+   },
+   "key": "2zrVOq8wxV3JwyzTFyfeB33+55uHJWLDNHKUQDRbTIo=",
+   "name": "SABnzbd | Idle",
+   "version": "2020.9.27.50676"
+}

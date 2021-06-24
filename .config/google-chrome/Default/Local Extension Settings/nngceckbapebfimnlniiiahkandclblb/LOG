@@ -1,0 +1,12 @@
+2021/06/08-16:38:10.934 44fd Reusing MANIFEST /home/aciidic/.config/google-chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb/MANIFEST-000001
+2021/06/08-16:38:10.934 44fd Recovering log #4
+2021/06/08-16:38:10.954 44fd Reusing old log /home/aciidic/.config/google-chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb/000004.log 
+2021/06/09-04:38:14.177 651e Level-0 table #8: started
+2021/06/09-04:38:14.199 651e Level-0 table #8: 3026320 bytes OK
+2021/06/09-04:38:14.202 651e Delete type=0 #4
+2021/06/09-05:04:30.268 6558 Compacting 1@1 + 1@2 files
+2021/06/09-05:04:30.286 6558 Generated table #9@1: 30 keys, 603822 bytes
+2021/06/09-05:04:30.286 6558 Compacted 1@1 + 1@2 files => 603822 bytes
+2021/06/09-05:04:30.287 6558 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/06/09-05:04:30.287 6558 Delete type=2 #5
+2021/06/09-05:04:30.287 6558 Delete type=2 #8

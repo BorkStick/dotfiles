@@ -1,0 +1,41 @@
+{
+   "app": {
+      "display_mode": "standalone",
+      "icon_color": "#51B54B",
+      "launch": {
+         "web_url": "https://flix.borkslash.com/web/index.html"
+      },
+      "linked_icons": [ {
+         "size": 72,
+         "url": "https://flix.borkslash.com/web/touchicon72.png"
+      }, {
+         "size": 114,
+         "url": "https://flix.borkslash.com/web/touchicon114.png"
+      }, {
+         "size": 144,
+         "url": "https://flix.borkslash.com/web/touchicon144.png"
+      } ],
+      "theme_color": "rgba(82,181,75,1)"
+   },
+   "description": "",
+   "icons": {
+      "114": "icons/114.png",
+      "128": "icons/128.png",
+      "144": "icons/144.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "72": "icons/72.png",
+      "96": "icons/96.png"
+   },
+   "key": "MGxZpkB1D+hyp0Mp2Uh9nz4I/oxOeYJf1Ca8kI1TRQM=",
+   "name": "Emby",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://flix.borkslash.com/web/*" ],
+         "title": "Emby"
+      }
+   },
+   "version": "2020.9.27.50676"
+}

@@ -1,0 +1,60 @@
+{
+   "app": {
+      "display_mode": "browser",
+      "launch": {
+         "web_url": "https://borkslash.com:8921/web/index.html"
+      },
+      "linked_icons": [ {
+         "size": 24,
+         "url": "https://borkslash.com:8921/web/css/images/favicon.ico"
+      }, {
+         "size": 32,
+         "url": "https://borkslash.com:8921/web/css/images/favicon.ico"
+      }, {
+         "size": 48,
+         "url": "https://borkslash.com:8921/web/css/images/favicon.ico"
+      }, {
+         "size": 57,
+         "url": "https://borkslash.com:8921/web/touchicon.png"
+      }, {
+         "size": 64,
+         "url": "https://borkslash.com:8921/web/css/images/favicon.ico"
+      }, {
+         "size": 72,
+         "url": "https://borkslash.com:8921/web/touchicon72.png"
+      }, {
+         "size": 96,
+         "url": "https://borkslash.com:8921/web/touchicon114.png"
+      }, {
+         "size": 114,
+         "url": "https://borkslash.com:8921/web/touchicon114.png"
+      }, {
+         "size": 128,
+         "url": "https://borkslash.com:8921/web/touchicon144.png"
+      }, {
+         "size": 144,
+         "url": "https://borkslash.com:8921/web/touchicon144.png"
+      }, {
+         "size": 256,
+         "url": "https://borkslash.com:8921/web/touchicon144.png"
+      } ]
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "1VnkdPp9RM9/pOqPBJNS6PQRR4aEZtmK8UmFlWlN/v4=",
+   "name": "Emby",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://borkslash.com:8921/web/index.html*" ],
+         "title": "Emby"
+      }
+   },
+   "version": "2020.9.27.50699"
+}

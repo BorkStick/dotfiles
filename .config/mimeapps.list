@@ -43,6 +43,11 @@ video/x-fli=vlc.desktop;
 video/x-flv=vlc.desktop;
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
 x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
+text/markdown=code.desktop;
+text/html=code.desktop;google-chrome.desktop;
+x-scheme-handler/http=google-chrome.desktop;
+application/xhtml+xml=google-chrome.desktop;
+x-scheme-handler/https=google-chrome.desktop;
 
 [Default Applications]
 video/x-ogm+ogg=vlc.desktop
@@ -88,3 +93,7 @@ video/flv=vlc.desktop
 video/x-flc=vlc.desktop
 video/x-fli=vlc.desktop
 video/x-flv=vlc.desktop
+x-scheme-handler/http=google-chrome.desktop
+application/xhtml+xml=google-chrome.desktop
+text/html=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop

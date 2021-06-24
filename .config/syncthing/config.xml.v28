@@ -1,0 +1,155 @@
+<configuration version="28">
+    <folder id="c9qrp-52y6y" label="PROJECTS" path="/home/aciidic/PROJECTS/" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="MUMVLXT-7ROVD2G-5QBD4N3-CKBUIWA-BIYZMYH-VGQO27M-HCP7KUL-5JFRAQ2" introducedBy=""></device>
+        <device id="VTWQWDC-KNNWWYZ-43XUO37-IEEE75N-FYZVMUJ-VPDR6VF-A5RSTC4-U5KXPQ5" introducedBy=""></device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning type="staggered">
+            <param key="maxAge" val="31536000"></param>
+            <param key="cleanInterval" val="3600"></param>
+            <param key="versionsPath" val=""></param>
+        </versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <maxConflicts>10</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <disableTempIndexes>false</disableTempIndexes>
+        <paused>false</paused>
+        <weakHashThresholdPct>25</weakHashThresholdPct>
+        <markerName>.stfolder</markerName>
+        <useLargeBlocks>true</useLargeBlocks>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+    </folder>
+    <folder id="d3eyc-nn2hz" label="SCRIPTS" path="/home/aciidic/scripts" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="MUMVLXT-7ROVD2G-5QBD4N3-CKBUIWA-BIYZMYH-VGQO27M-HCP7KUL-5JFRAQ2" introducedBy=""></device>
+        <device id="VTWQWDC-KNNWWYZ-43XUO37-IEEE75N-FYZVMUJ-VPDR6VF-A5RSTC4-U5KXPQ5" introducedBy=""></device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning></versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <maxConflicts>10</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <disableTempIndexes>false</disableTempIndexes>
+        <paused>false</paused>
+        <weakHashThresholdPct>25</weakHashThresholdPct>
+        <markerName>.stfolder</markerName>
+        <useLargeBlocks>true</useLargeBlocks>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+    </folder>
+    <folder id="default" label="Default Folder" path="/home/aciidic/Sync" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="VTWQWDC-KNNWWYZ-43XUO37-IEEE75N-FYZVMUJ-VPDR6VF-A5RSTC4-U5KXPQ5" introducedBy=""></device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning></versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <maxConflicts>-1</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <disableTempIndexes>false</disableTempIndexes>
+        <paused>false</paused>
+        <weakHashThresholdPct>25</weakHashThresholdPct>
+        <markerName>.stfolder</markerName>
+        <useLargeBlocks>true</useLargeBlocks>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+    </folder>
+    <folder id="othni-nlv5u" label="server-dotfiles" path="/home/aciidic/server-dotfiles" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="MUMVLXT-7ROVD2G-5QBD4N3-CKBUIWA-BIYZMYH-VGQO27M-HCP7KUL-5JFRAQ2" introducedBy=""></device>
+        <device id="VTWQWDC-KNNWWYZ-43XUO37-IEEE75N-FYZVMUJ-VPDR6VF-A5RSTC4-U5KXPQ5" introducedBy=""></device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning></versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <maxConflicts>10</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <disableTempIndexes>false</disableTempIndexes>
+        <paused>false</paused>
+        <weakHashThresholdPct>25</weakHashThresholdPct>
+        <markerName>.stfolder</markerName>
+        <useLargeBlocks>true</useLargeBlocks>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+    </folder>
+    <device id="MUMVLXT-7ROVD2G-5QBD4N3-CKBUIWA-BIYZMYH-VGQO27M-HCP7KUL-5JFRAQ2" name="BorkNAS" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+        <address>dynamic</address>
+        <paused>false</paused>
+        <autoAcceptFolders>false</autoAcceptFolders>
+        <maxSendKbps>0</maxSendKbps>
+        <maxRecvKbps>0</maxRecvKbps>
+        <maxRequestKiB>0</maxRequestKiB>
+    </device>
+    <device id="VTWQWDC-KNNWWYZ-43XUO37-IEEE75N-FYZVMUJ-VPDR6VF-A5RSTC4-U5KXPQ5" name="borkpop" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+        <address>dynamic</address>
+        <paused>false</paused>
+        <autoAcceptFolders>false</autoAcceptFolders>
+        <maxSendKbps>0</maxSendKbps>
+        <maxRecvKbps>0</maxRecvKbps>
+        <maxRequestKiB>0</maxRequestKiB>
+    </device>
+    <gui enabled="true" tls="false" debugging="false">
+        <address>127.0.0.1:8384</address>
+        <apikey>VFwKpkiHk7MbRPFxftqrKgTocbG3QuWn</apikey>
+        <theme>default</theme>
+    </gui>
+    <ldap></ldap>
+    <options>
+        <listenAddress>default</listenAddress>
+        <globalAnnounceServer>default</globalAnnounceServer>
+        <globalAnnounceEnabled>true</globalAnnounceEnabled>
+        <localAnnounceEnabled>true</localAnnounceEnabled>
+        <localAnnouncePort>21027</localAnnouncePort>
+        <localAnnounceMCAddr>[ff12::8384]:21027</localAnnounceMCAddr>
+        <maxSendKbps>0</maxSendKbps>
+        <maxRecvKbps>0</maxRecvKbps>
+        <reconnectionIntervalS>60</reconnectionIntervalS>
+        <relaysEnabled>true</relaysEnabled>
+        <relayReconnectIntervalM>10</relayReconnectIntervalM>
+        <startBrowser>true</startBrowser>
+        <natEnabled>true</natEnabled>
+        <natLeaseMinutes>60</natLeaseMinutes>
+        <natRenewalMinutes>30</natRenewalMinutes>
+        <natTimeoutSeconds>10</natTimeoutSeconds>
+        <urAccepted>-1</urAccepted>
+        <urSeen>0</urSeen>
+        <urUniqueID></urUniqueID>
+        <urURL>https://data.syncthing.net/newdata</urURL>
+        <urPostInsecurely>false</urPostInsecurely>
+        <urInitialDelayS>1800</urInitialDelayS>
+        <restartOnWakeup>true</restartOnWakeup>
+        <autoUpgradeIntervalH>12</autoUpgradeIntervalH>
+        <upgradeToPreReleases>false</upgradeToPreReleases>
+        <keepTemporariesH>24</keepTemporariesH>
+        <cacheIgnoredFiles>false</cacheIgnoredFiles>
+        <progressUpdateIntervalS>5</progressUpdateIntervalS>
+        <limitBandwidthInLan>false</limitBandwidthInLan>
+        <minHomeDiskFree unit="%">1</minHomeDiskFree>
+        <releasesURL>https://upgrades.syncthing.net/meta.json</releasesURL>
+        <overwriteRemoteDeviceNamesOnConnect>false</overwriteRemoteDeviceNamesOnConnect>
+        <tempIndexMinBlocks>10</tempIndexMinBlocks>
+        <trafficClass>0</trafficClass>
+        <defaultFolderPath>~</defaultFolderPath>
+        <setLowPriority>true</setLowPriority>
+        <maxConcurrentScans>0</maxConcurrentScans>
+    </options>
+    <remoteIgnoredDevice time="2020-07-15T07:30:39.609Z" id="7VB7E5A-KIDV36L-LKKYCQQ-SOA6EBZ-ELUTOTH-LAXPTNH-4S4DW5B-KO3JNAP" name="borkmac" address="10.0.0.170:47708"></remoteIgnoredDevice>
+</configuration>

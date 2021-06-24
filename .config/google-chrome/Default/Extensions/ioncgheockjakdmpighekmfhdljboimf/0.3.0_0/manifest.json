@@ -1,0 +1,32 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_title": "BetterYTG"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content.js" ],
+      "matches": [ "*://*.gaming.youtube.com/*", "*://*.youtube.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "BetterYTG enhances YouTube Gaming Livestream's with more emotes (Twitch, BTTV Emotes), new features, and more.",
+   "icons": {
+      "128": "assets/icons/BetterYTG_red_128.png",
+      "16": "assets/icons/BetterYTG_red_16.png",
+      "48": "assets/icons/BetterYTG_red_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoekgNFkeNWzbuBbKbbhmkQfXWXUF9EVxPbFmoImngHa4HsfIIe1sNbFPoJw0oXwzwt1Z78XSJrNZcEVy1xbJqPq0duRFXkZIZORM/bWLNN2pMVhGkacIFfWm4V0AyLe+X06XBAa+gIoha7M16yiHc2b4HhI/GRAygdzQg+hZPALyob3faB1wPNxYFT8LQCJMHnc1g/h4EgyUsLjG/wfu2S12J9dpbrpoqc6/BT7sbDJMpGSqEkXxg39e36knzPdk4F6/jaXhuZRJisep47k7SKn3F127tfEYGMoh8wsk+qkhtBKetsxJ7bacb098dsTuMVuMeu6rs6MRKU9JP67QGwIDAQAB",
+   "manifest_version": 2,
+   "name": "Better YouTube Gaming",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "html/options.html"
+   },
+   "permissions": [ "storage", "background", "tabs", "https://*.ytimg.com/*", "https://twitchemotes.com/*" ],
+   "short_name": "BetterYTG",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.3.0",
+   "web_accessible_resources": [ "assets/emotes/*" ]
+}

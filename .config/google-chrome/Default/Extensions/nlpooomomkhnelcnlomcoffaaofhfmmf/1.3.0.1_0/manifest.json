@@ -1,0 +1,17 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://vilanoise.tv/"
+      },
+      "urls": [ "http://vilanoise.tv/", "http://vilanoise.tv/about", "http://vilanoise.tv/partners", "http://vilanoise.tv/contact", "http://vilanoise.tv/privacy" ]
+   },
+   "description": "Online music television with the best Pop, Rock, Indie, Hip Hop and Electronic music videos.",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDfVsk9g6oV2t2m1gYaymoedscsF3jBa4Df+D59uvY2OUTdsjvIrp0WrQloWXPU7ZcUegSJ4WdmsX3MW4UOyG6qeIRgsKDuDNYxLJ0nkGBMhRkszQcHj3J7ydaW+kCquFQw4e1vvedAyWuXnEBAcqQn3CdexfgU98Xb/hBzuv2TBwIDAQAB",
+   "manifest_version": 2,
+   "name": "Vilanoise TV",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3.0.1"
+}

@@ -1,0 +1,7 @@
+2021/04/12-02:06:03.613 237d Reusing MANIFEST /home/aciidic/.config/google-chrome/Default/IndexedDB/https_www.notion.so_0.indexeddb.leveldb/MANIFEST-000001
+2021/04/12-02:06:03.613 237d Recovering log #3
+2021/04/12-02:06:03.624 237d Reusing old log /home/aciidic/.config/google-chrome/Default/IndexedDB/https_www.notion.so_0.indexeddb.leveldb/000003.log 
+2021/04/13-13:19:56.497 100185 Level-0 table #5: started
+2021/04/13-13:19:56.505 100185 Level-0 table #5: 222812 bytes OK
+2021/04/13-13:19:56.507 100185 Delete type=0 #3
+2021/04/13-13:19:56.507 100185 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

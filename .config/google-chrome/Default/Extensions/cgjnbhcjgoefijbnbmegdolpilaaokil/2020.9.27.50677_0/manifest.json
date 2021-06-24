@@ -1,0 +1,38 @@
+{
+   "app": {
+      "display_mode": "browser",
+      "icon_color": "#50B34C",
+      "launch": {
+         "web_url": "http://borkslash.com:8096/web/index.html"
+      },
+      "linked_icons": [ {
+         "size": 0,
+         "url": "http://borkslash.com:8096/web/touchicon.png"
+      }, {
+         "size": 72,
+         "url": "http://borkslash.com:8096/web/touchicon72.png"
+      }, {
+         "size": 114,
+         "url": "http://borkslash.com:8096/web/touchicon114.png"
+      }, {
+         "size": 0,
+         "url": "http://borkslash.com:8096/web/favicon.ico"
+      } ]
+   },
+   "description": "",
+   "icons": {
+      "114": "icons/114.png",
+      "128": "icons/128.png",
+      "24": "icons/24.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "57": "icons/57.png",
+      "64": "icons/64.png",
+      "72": "icons/72.png",
+      "96": "icons/96.png"
+   },
+   "key": "HaTpNpUK+iinvAreUKS4WSLFcSJfZYEzggI8GNpFYBQ=",
+   "name": "Emby",
+   "version": "2020.9.27.50677"
+}

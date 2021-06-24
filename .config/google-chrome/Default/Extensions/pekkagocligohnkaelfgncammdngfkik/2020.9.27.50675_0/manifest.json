@@ -1,0 +1,41 @@
+{
+   "app": {
+      "display_mode": "browser",
+      "icon_color": "#4694AD",
+      "launch": {
+         "web_url": "http://10.0.0.56:8989/login?returnUrl=/"
+      },
+      "linked_icons": [ {
+         "size": 0,
+         "url": "http://10.0.0.56:8989/Content/Images/touch/57.png?h=cYW4iAoiF8Umm1DHSzinJA"
+      }, {
+         "size": 72,
+         "url": "http://10.0.0.56:8989/Content/Images/touch/72.png?h=8iKZ1Ip3YAXGoD7q/n82Uw"
+      }, {
+         "size": 114,
+         "url": "http://10.0.0.56:8989/Content/Images/touch/114.png?h=9tDnXMrTFbU2OW5+X8wTkw"
+      }, {
+         "size": 144,
+         "url": "http://10.0.0.56:8989/Content/Images/touch/144.png?h=UFS9RLRUFxgLXaIGUYrQEg"
+      }, {
+         "size": 0,
+         "url": "http://10.0.0.56:8989/Content/Images/favicon.ico?h=hnQH4IZszkSOw1Uy6Oe9Aw"
+      } ]
+   },
+   "description": "",
+   "icons": {
+      "114": "icons/114.png",
+      "128": "icons/128.png",
+      "144": "icons/144.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "57": "icons/57.png",
+      "64": "icons/64.png",
+      "72": "icons/72.png",
+      "96": "icons/96.png"
+   },
+   "key": "8erp9sb73x8ZxSZRDEherRj6+fWG3zpbBjHmeD4qoko=",
+   "name": "Sonarr - Login",
+   "version": "2020.9.27.50675"
+}

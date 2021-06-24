@@ -1,0 +1,21 @@
+{
+   "app": {
+      "display_mode": "browser",
+      "launch": {
+         "web_url": "http://borkslash.com:8181/r/RadioBork"
+      },
+      "linked_icons": [  ]
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "AFP+ez6vM0y9na74/1IJNgfoSLYoH99RIiKgN64zL/Q=",
+   "name": "RadioBork",
+   "version": "2020.9.27.50699"
+}

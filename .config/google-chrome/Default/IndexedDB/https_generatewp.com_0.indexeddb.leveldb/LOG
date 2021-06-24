@@ -1,0 +1,5 @@
+2021/04/08-16:04:00.336 50e4 Reusing MANIFEST /home/aciidic/.config/google-chrome/Default/IndexedDB/https_generatewp.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/04/08-16:05:10.200 520a Level-0 table #5: started
+2021/04/08-16:05:10.202 520a Level-0 table #5: 6111 bytes OK
+2021/04/08-16:05:10.203 520a Delete type=0 #3
+2021/04/08-16:05:10.203 520a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

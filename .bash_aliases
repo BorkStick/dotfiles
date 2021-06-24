@@ -112,6 +112,15 @@ ipinfo(){
   curl ipinfo.io/$1
 }
 
+
+resphead(){
+  curl -s -o /dev/null -D - $1
+}
+
+powerby(){
+  curl -s -o /dev/null -D - $1 | grep x-powered-by
+}
+
 sshspeedtest () {
   yes | pv |ssh "$1" "cat >/dev/null"
 }
@@ -124,6 +133,7 @@ covid () {
 btc () {
   curl -s http://api.coindesk.com/v1/bpi/currentprice.json | python -c "import json, sys; print(json.load(sys.stdin)['bpi']['USD']['rate'])"
 }
+
 
 crypto () {
   curl rate.sx/$1

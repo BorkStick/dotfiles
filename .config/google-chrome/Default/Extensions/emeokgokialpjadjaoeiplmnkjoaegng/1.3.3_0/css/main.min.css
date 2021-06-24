@@ -1,0 +1,621 @@
+#NOTEPAD,
+#NOTEPAD div,
+#NOTEPAD span,
+#NOTEPAD applet,
+#NOTEPAD object,
+#NOTEPAD iframe,
+#NOTEPAD h1,
+#NOTEPAD h2,
+#NOTEPAD h3,
+#NOTEPAD h4,
+#NOTEPAD h5,
+#NOTEPAD h6,
+#NOTEPAD p,
+#NOTEPAD blockquote,
+#NOTEPAD pre,
+#NOTEPAD a,
+#NOTEPAD abbr,
+#NOTEPAD acronym,
+#NOTEPAD address,
+#NOTEPAD big,
+#NOTEPAD cite,
+#NOTEPAD code,
+#NOTEPAD del,
+#NOTEPAD dfn,
+#NOTEPAD em,
+#NOTEPAD img,
+#NOTEPAD ins,
+#NOTEPAD kbd,
+#NOTEPAD q,
+#NOTEPAD s,
+#NOTEPAD samp,
+#NOTEPAD small,
+#NOTEPAD strike,
+#NOTEPAD strong,
+#NOTEPAD sub,
+#NOTEPAD sup,
+#NOTEPAD tt,
+#NOTEPAD var,
+#NOTEPAD b,
+#NOTEPAD u,
+#NOTEPAD i,
+#NOTEPAD center,
+#NOTEPAD dl,
+#NOTEPAD dt,
+#NOTEPAD dd,
+#NOTEPAD ol,
+#NOTEPAD ul,
+#NOTEPAD li,
+#NOTEPAD fieldset,
+#NOTEPAD form,
+#NOTEPAD label,
+#NOTEPAD legend,
+#NOTEPAD table,
+#NOTEPAD caption,
+#NOTEPAD tbody,
+#NOTEPAD tfoot,
+#NOTEPAD thead,
+#NOTEPAD tr,
+#NOTEPAD th,
+#NOTEPAD td,
+#NOTEPAD article,
+#NOTEPAD aside,
+#NOTEPAD canvas,
+#NOTEPAD details,
+#NOTEPAD embed,
+#NOTEPAD figure,
+#NOTEPAD figcaption,
+#NOTEPAD footer,
+#NOTEPAD header,
+#NOTEPAD hgroup,
+#NOTEPAD menu,
+#NOTEPAD nav,
+#NOTEPAD output,
+#NOTEPAD ruby,
+#NOTEPAD section,
+#NOTEPAD summary,
+#NOTEPAD time,
+#NOTEPAD mark,
+#NOTEPAD audio,
+#NOTEPAD video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+#NOTEPAD article,
+#NOTEPAD aside,
+#NOTEPAD details,
+#NOTEPAD figcaption,
+#NOTEPAD figure,
+#NOTEPAD footer,
+#NOTEPAD header,
+#NOTEPAD hgroup,
+#NOTEPAD menu,
+#NOTEPAD nav,
+#NOTEPAD section {
+    display: block;
+}
+#NOTEPAD ol,
+#NOTEPAD ul {
+    list-style: none;
+}
+#NOTEPAD blockquote,
+#NOTEPAD q {
+    quotes: none;
+}
+#NOTEPAD blockquote:before,
+#NOTEPAD blockquote:after,
+#NOTEPAD q:before,
+#NOTEPAD q:after {
+    content: "";
+    content: none;
+}
+
+
+
+@font-face{
+    font-family: 'Oxygen Regular';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Oxygen-Regular.ttf') format('truetype');
+}
+
+
+#NOTEPAD table {
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+}
+#NOTEPAD {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 2147483647 !important;
+    background: transparent !important;
+    pointer-events: auto !important;
+}
+#NOTEPAD.hide {
+    display: none !important;
+}
+#NOTEPAD.pen {
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/pen_icon_b.svg') 0 11, auto;
+}
+#NOTEPAD.cross {
+    cursor: crosshair !important;
+}
+#NOTEPAD.eraser {
+    cursor: url(data:image/png;base64,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)
+            2 2,
+        auto;
+}
+#NOTEPAD.text {
+    cursor: text !important;
+}
+#NOTEPAD.eyedropper {
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/eyedropper_icon_b.svg') 0 0, auto;
+}
+#NOTEPAD.fill {
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/paint_bucket_icon_b.svg') 0 0, auto;
+}
+#NOTEPAD.cursor {
+    pointer-events: none !important;
+}
+
+#NOTEPAD_controls {
+    display: flex;
+    justify-content: space-start !important;
+    align-items: flex-start !important;
+    position: fixed !important;
+    top: 2px;
+    right: 5px;
+    width: 585px !important;
+    height: 111px !important;
+    padding-left: 5px !important;
+    font-family: arial, helvetica, sans-serif  !important;
+    z-index: 2147483647 !important;
+    background-color: #f3f3f4 !important;
+    border: 1px solid #eee !important;
+    box-sizing: border-box !important;
+ 
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3) !important;
+    -moz-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3) !important;
+    margin: 0 !important;
+    font-size: initial !important;
+    vertical-align: baseline !important;
+    -ms-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    line-height: normal !important;
+    color: #000 !important;
+    cursor: move !important;
+    opacity: 0;
+    -webkit-animation: controlFadingIn 0.3s !important;
+    -webkit-animation-fill-mode: forwards !important;
+    animation: controlFadingIn 0.3s !important;
+    animation-fill-mode: forwards !important;
+    border: 3px solid #fff !important;
+
+}
+
+
+#NOTEPAD_controls .settings_btn {
+    position: absolute !important;
+    top: 60px !important;
+    left: 245px;
+    width: 40px;
+    height: 40px !important;
+    border-radius: 3px !important;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/options_icon.svg');
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 30px 30px !important;
+    cursor: pointer !important;
+    z-index: 1000;
+}
+
+#NOTEPAD_controls .settings_btn:hover {
+    background-color: #ffffff !important;
+    box-shadow: 0px 2px 4px 0px rgba(221, 223, 225, 0.2) !important;
+}
+
+#NOTEPAD_controls.hide {
+    display: none;
+}
+#NOTEPAD_controls input {
+    height: auto !important;
+}
+#NOTEPAD_controls div {
+    box-sizing: border-box !important;
+    line-height: normal !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw {
+    position: relative !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    align-content: flex-start !important;
+    width: 281px !important;
+    height: 124px !important;
+    padding-top: 20px !important;
+    margin-right: 7px !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw:before {
+    content: "Tools";
+    position: absolute;
+    position: absolute !important;
+    left: 50% !important;
+    top: 0 !important;
+    transform: translateX(-20px) !important;
+    text-align: center !important;
+    display: block !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    padding-bottom: 3px !important;
+    margin-top: 5px !important;
+    font-family: 'Oxygen Regular', sans-serif !important;
+    line-height: 1 !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option {
+    width: 40px !important;
+    height: 40px !important;
+    box-sizing: border-box;
+    /* border: 1px solid transparent; */
+    border-radius: 3px !important;
+    display: inline-block !important;
+    cursor: pointer !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.pen {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/pen_icon.svg');
+    background-size: 30px 30px !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.line {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/line_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.arrow {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/arrow_line_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.quadratic_curve {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/quadratic_curve_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.bezier_curve {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/bezier_curve_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.circle {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/circle_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.rectangle {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/rectangle_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.text {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/text_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.eraser {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/eraser_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.cursor {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/cursor_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.polygon {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/polygon_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.eyedropper {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/eyedropper_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.fill {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/fill_icon.svg');
+}
+
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option.selected {
+    background-color: #fff !important;
+    box-shadow: 0px 2px 4px 0px rgba(76, 101, 127, 0.2) !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_draw .NOTEPAD_controls_draw_option:hover {
+    width: 40px !important;
+    height: 40px !important;
+    box-shadow: 0px 2px 4px 0px rgba(76, 101, 127, 0.2) !important;
+    background-color: #ffffff !important;
+   
+}
+#NOTEPAD_controls .NOTEPAD_controls_color {
+    display: inline-block !important;
+    vertical-align: top !important;
+    height: 100% !important;
+    height: 111px !important;
+    padding: 0 10px !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-image: linear-gradient(to bottom, rgba(229,231,233,0) 5%, rgb(173,178,182) 71%, rgba(229,231,233,0) 90%) 1 100% !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+
+      
+}
+
+
+#NOTEPAD_controls .NOTEPAD_controls_color:before {
+    content: "Color";
+    display: block !important;
+    padding-bottom: 5px !important;
+    margin-top: 5px !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    font-family: 'Oxygen Regular', sans-serif !important;
+    line-height: 1 !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_color input {
+    width: 41px !important;
+    height: 75px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 2px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    outline: none !important;
+    -webkit-appearance: square-button !important;
+    -moz-appearance: square-button !important;
+    appearance: square-button !important;
+    -webkit-appearance: none !important;
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: 0px 2px 4px 0px rgba(221, 223, 225, 0.004) !important;
+}
+
+#NOTEPAD_controls .NOTEPAD_controls_color input[type="color"] {
+    -webkit-appearance: none !important;
+}
+
+#NOTEPAD_controls .NOTEPAD_controls_color input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 3px !important;
+    border-radius: 3px !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+#NOTEPAD_controls .NOTEPAD_controls_color input[type="color"]::-webkit-color-swatch {
+    padding: 5px !important;
+    border: none !important;
+    border-radius: 3px !important;
+}
+
+.NOTEPAD_controls_range_wrapper {
+    display: inline-flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    width: 91px !important;
+    height: 111px !important;
+    overflow-wrap: normal !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_range {
+    display: inline-block !important;
+    vertical-align: top !important;
+    height: 100% !important;
+    padding: 0 10px !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    border-left: 0 !important;
+
+    /* position: absolute; */
+}
+#NOTEPAD_controls .NOTEPAD_controls_range.alpha_control:before {
+    content: "Transparency";
+    display: block !important;
+    padding-bottom: 2px !important;
+    margin-top: 5px !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    font-family: 'Oxygen Regular', sans-serif !important;
+    line-height: 1 !important;
+}
+
+#NOTEPAD_controls .NOTEPAD_controls_range.size_control {
+    top: 60px !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_range.size_control:before {
+    content: "Size";
+    display: block !important;
+    padding-bottom: 2px !important;
+    margin-top: 0px;
+    text-align: left !important;
+    font-size: 12px !important;
+    font-family: 'Oxygen Regular', sans-serif !important;
+    line-height: 1 !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_range input {
+    color: #909090 !important;
+    -ms-box-sizing: initial !important;
+    -moz-box-sizing: initial !important;
+    -webkit-box-sizing: initial !important;
+    box-sizing: initial !important;
+    width: 70px !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+
+    height: 7px !important;
+    margin: 0 !important;
+    border: none !important;
+    padding: 2px 2px 2px 2px !important;
+    margin-bottom: 5px !important;
+    border-radius: 14px !important;
+    background: #fff !important;
+    box-shadow: 0px 2px 4px 0px rgba(76, 101, 127, 0.2) !important;
+    outline: none !important;
+      
+}
+#NOTEPAD_controls .NOTEPAD_controls_range input::-moz-range-track {
+    border: inherit !important;
+    background: transparent !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_range input::-ms-track {
+    border: inherit !important;
+    color: transparent !important;
+    background: transparent !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_range input::-ms-fill-lower,
+#NOTEPAD_controls .NOTEPAD_controls_range input::-ms-fill-upper {
+    background: transparent;
+}
+#NOTEPAD_controls .NOTEPAD_controls_range input::-ms-tooltip {
+    display: none !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_range input::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    width: 6px !important;
+    height: 6px !important;
+    border: none !important;
+    -webkit-border-top-right-radius: 2px !important;
+    -webkit-border-bottom-right-radius: 2px !important;
+    -webkit-border-bottom-left-radius: 2px !important;
+    -webkit-border-top-left-radius: 2px !important;
+    -moz-border-radius-topright: 2px !important;
+    -moz-border-radius-bottomright: 2px !important;
+    -moz-border-radius-bottomleft: 2px !important;
+    -moz-border-radius-topleft: 2px !important;
+    border-top-right-radius: 2px !important;
+    border-bottom-right-radius: 2px !important;
+    border-bottom-left-radius: 2px !important;
+    border-top-left-radius: 2px !important;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    background-color: #40c0eb !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_range input::-moz-range-thumb {
+    width: 6px !important;
+    height: 6px !important;
+    border: none !important;
+    border-radius: 2px !important;
+    background-image: linear-gradient(to bottom, #529de1 0, #245e8f 100%) !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_range input::-ms-thumb {
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 2px !important;
+    border: 0 !important;
+    background-image: linear-gradient(to bottom, #529de1 0, #245e8f 100%) !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_range p {
+    text-align: right !important;
+    color: #000 !important;
+    font-size: 12px !important;
+    font-family: "Oxygen Regular", sans-serif !important;
+    margin: 0;
+}
+#NOTEPAD_controls .NOTEPAD_controls_control {
+    position: relative !important;
+    display: inline-flex !important;
+    align-content: flex-start !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    width: 126px !important;
+    vertical-align: top !important;
+    height: 111px !important;
+    padding: 19px 0px 0 4px !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+
+    border-image: linear-gradient(to bottom, rgba(229,231,233,0) 5%, rgb(173,178,182) 71%, rgba(229,231,233,0) 90%) 1 100% !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_control:before {
+    content: "Controls";
+    position: absolute !important;
+    left: 50% !important;
+    top: 0 !important;
+    transform: translateX(-20px) !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    padding-bottom: 0px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    font-family: 'Oxygen Regular', sans-serif !important;
+    line-height: 1;
+}
+
+
+#NOTEPAD_controls .NOTEPAD_controls_control .NOTEPAD_controls_control_option {
+    width: 40px !important;
+    height: 40px !important;
+    cursor: pointer !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-color: transparrent !important;
+}
+
+#NOTEPAD_controls .NOTEPAD_controls_control .NOTEPAD_controls_control_option:hover {
+    box-shadow: 0px 2px 4px 0px rgba(76, 101, 127, 0.2) !important;
+    background-color: #ffffff !important;
+    opacity: 1 !important;
+    border-radius: 3px !important;
+}
+
+#NOTEPAD_controls .NOTEPAD_controls_control .NOTEPAD_controls_control_option.prtBtn {
+    margin-left: 0 !important;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/screenshot_icon.svg');
+
+}
+#NOTEPAD_controls .NOTEPAD_controls_control .NOTEPAD_controls_control_option.exitBtn {
+    background-position: center !important;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/exit_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_control .NOTEPAD_controls_control_option.nextBtn {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/next_icon.svg');
+    background-size: 28px 26px !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_control .NOTEPAD_controls_control_option.nextBtn.disabled {
+    -moz-opacity: 0.3 !important;
+    -khtml-opacity: 0.3 !important;
+    -webkit-opacity: 0.3 !important;
+    opacity: 0.3 !important;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30) !important;
+    filter: alpha(opacity=30) !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_control .NOTEPAD_controls_control_option.backBtn {
+    margin-left: 0 !important;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/undo_icon.svg');
+    background-size: 28px 26px !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_control .NOTEPAD_controls_control_option.backBtn.disabled {
+    -moz-opacity: 0.3 !important;
+    -khtml-opacity: 0.3 !important;
+    -webkit-opacity: 0.3 !important;
+    opacity: 0.3 !important;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30) !important;
+    filter: alpha(opacity=30) !important;
+}
+#NOTEPAD_controls .NOTEPAD_controls_control .NOTEPAD_controls_control_option.eraseAllBtn {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/eraseAll_icon.svg');
+}
+#NOTEPAD_controls .NOTEPAD_controls_control .NOTEPAD_controls_control_option.hideCtrlBtn {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/images/close_panel_icon.svg');
+}
+@keyframes controlFadingIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes controlFadingIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

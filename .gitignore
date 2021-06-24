@@ -9,6 +9,8 @@
 .config/gtk-3.0/
 .config/kdeconnect/
 
+.config/syncthing/
+
 
 .config/gnome-initial-setup-done
 .config/user-dirs.dirs

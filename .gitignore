@@ -8,8 +8,18 @@
 .config/GitKraken/
 .config/gtk-3.0/
 .config/kdeconnect/
-
+.config/alacritty/
+.config/borkwatch-electron/
+.config/gsconnect/
+.config/WebTorrent/
+.config/vlc/
+.config/libreoffice/
 .config/syncthing/
+.config/syncthing-gtk/
+.config/synergy/
+.config/WebTorrent/
+
+
 
 
 .config/gnome-initial-setup-done

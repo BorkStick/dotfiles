@@ -1,5 +1,0 @@
-2021/04/12-02:08:23.648 299d Reusing MANIFEST /home/aciidic/.config/google-chrome/Default/IndexedDB/https_redditad.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/04/12-02:08:38.393 2339 Level-0 table #5: started
-2021/04/12-02:08:38.397 2339 Level-0 table #5: 334 bytes OK
-2021/04/12-02:08:38.399 2339 Delete type=0 #3
-2021/04/12-02:08:38.399 2339 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
